@@ -26,6 +26,7 @@
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"tslib": "^2.4.1",
+		"ttt-ts-bindings": "../ttt-ts-bindings/",
 		"typescript": "^5.0.0",
 		"vite": "^4.3.0"
 	},
