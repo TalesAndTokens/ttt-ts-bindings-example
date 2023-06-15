@@ -1,10 +1,8 @@
-<script>
-	import './styles.css';
-</script>
-
 <div class="app">
-	<header>
-
+	<header style="margin-bottom: 8px; padding: 0 16px;">
+		<nav style="margin-bottom: 8px">
+			<h1>T&T TypeScript Bindings example</h1>
+		</nav>
 	</header>
 
 	<main>
@@ -12,5 +10,6 @@
 	</main>
 
 	<footer>
+		Tales & Tokens, Inc.
 	</footer>
 </div>
