@@ -1,6 +1,8 @@
 {
 	"name": "ttt-ts-bindings-example",
 	"version": "0.0.1",
+	"author": "Tales & Tokens, Inc.",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
