@@ -1,6 +1,8 @@
 import { ethers } from "ethers";
 import { CHAIN_ID, JSON_RPC_URL } from "$env/static/private";
 
+export class UnknownChinaId extends Error {}
+
 export const batchProvider = (chainId?: string, rpcUrl?: string) => {
   return defaultProvider(chainId || CHAIN_ID, rpcUrl || JSON_RPC_URL);
 };
@@ -16,7 +18,7 @@ function defaultProvider(chainId: string, rpcUrl: string) {
     case "0x250":
       return astarProvider(rpcUrl);
     default:
-      throw `wrong chainId: ${chainId}`;
+      throw new UnknownChinaId(`unknown chainId: ${chainId}`);
   }
 }
 
