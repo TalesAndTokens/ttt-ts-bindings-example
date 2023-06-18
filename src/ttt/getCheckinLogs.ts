@@ -32,7 +32,7 @@ export const getCheckinLogs = async () => {
     return {
       ...event,
       count: counts[index],
-      timestamp: timestamps[index],
+      timestamp: timestamps[index] * 1000,
     };
   });
 };
