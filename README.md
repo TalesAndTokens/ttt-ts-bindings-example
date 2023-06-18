@@ -1,38 +1,34 @@
-# create-svelte
+# Tales & Tokens example web app
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Features
 
-## Creating a project
+- View a list of NFTs
+- View a list of check-in records
 
-If you're seeing this, you've probably already done this step. Congrats!
+Transaction sending will be implemented soon.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Execution Networks
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- Polygon Testnet(Mumbai)
+
+Mainnet support will be implemented soon. 
+
+## Setup
+
+- Clone this repository.
+- `npm install`
+- create `.env.local`
+  - show `.env.local.example`
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```
 npm run dev
 
 # or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## Building
+## Screen Shot
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<img src="docs/images/screenshot.png" width="320px" />
