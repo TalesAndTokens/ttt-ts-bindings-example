@@ -34,4 +34,29 @@ module.exports = {
       },
     },
   ],
+  rules: {
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        version: ">=12.0.0",
+        ignores: ["modules"],
+      },
+    ],
+    "node/no-unsupported-features/es-builtins": [
+      "error",
+      {
+        version: ">=12.0.0",
+        ignores: [],
+      },
+    ],
+    "node/no-unsupported-features/node-builtins": [
+      "error",
+      {
+        version: ">=12.0.0",
+        ignores: [],
+      },
+    ],
+    "node/no-missing-import": ["off"],
+    "node/no-unpublished-import": ["off"],
+  },
 };
