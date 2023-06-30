@@ -25,8 +25,8 @@ export const getCheckinLogs = async () => {
     return eventCheckin.getLatestCheckinTimestampFromPlayer(address, worldId, event.eventDefinitionId);
   });
 
-  const counts = (await Promise.all(countPromises)).map((count) => count.toNumber());
-  const timestamps = (await Promise.all(timestampPromises)).map((timestamp) => timestamp.toNumber());
+  const counts = await Promise.all(countPromises);
+  const timestamps = (await Promise.all(timestampPromises)).map((timestamp) => Number(timestamp));
 
   return events.map((event, index) => {
     return {

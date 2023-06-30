@@ -22,7 +22,7 @@ export const getBaseTokens = async (): Promise<BaseToken[]> => {
     const baseNftAddress = await worldStore.getTokenContract(worldId, "BaseNFT");
 
     const l1nft = IL1NFT__factory.connect(baseNftAddress, provider);
-    const tokenIds = (await l1nft.getTokens(address)).map((item) => item.toNumber().toString());
+    const tokenIds = (await l1nft.getTokens(address)).map((item) => item.toString());
     const tokenUrisPromises = tokenIds.map((tokenId) => {
       return l1nft.tokenURI(tokenId);
     });
